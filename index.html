@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <h1>Welcome to world best javascript course</h1>
+   
+    <button onclick="alert('Hi nimii')">Welcome javascript</button>
+    -->
+    <div>
+        <h1>Simple Dom todo app</h1>
+        <input type="text" id="input-field"/>
+        <button class="btn">Click Me</button>
+        <div class="todolist"></div>
+        
+    </div>
+
+
+    <!--Internal Javascript-->
+    <script>
+      let inputEle = document.getElementById("input-field");
+      console.log(inputEle);
+      let clickBtn = document.querySelector(".btn");
+      let todoElem = document.querySelector(".todolist");
+   
+
+
+      const addToDo =()=>{
+        console.log(inputEle.value);
+        let pEle = document.createElement("p");
+        pEle.textContent = inputEle.value;
+        console.log(pEle);
+        todoElem.append(pEle);
+        inputEle.value = "";
+       
+
+      }
+
+      
+      clickBtn.addEventListener("click", () =>{
+        addToDo();
+
+      })
+
+
+    </script>
+
+    <!-- External Javascript
+    <script src="intro.js"></script>
+    <script src="variable.js"></script>
+    <script src="datatype.js"></script>
+    <script src="operator.js"></script>
+    <script src="loop.js"></script>
+    <script src="function.js"></script>
+    <script src="array.js"></script>
+    <script src="string.js"></script>
+    <script src="mathobject.js"></script>
+    <script src="window.js"></script>
+-->
+
+    
+</body>
+</html>

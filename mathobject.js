@@ -1,0 +1,1 @@
+// register py is k function lkhyn hain pratice krni ha.
